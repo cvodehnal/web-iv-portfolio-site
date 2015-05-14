@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+nav {
+	background-color: pink;
+}
+
+li {
+	list-style-type: none;
+}

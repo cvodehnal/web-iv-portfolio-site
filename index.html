@@ -5,25 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Chazgazm</title>
 		<link rel="stylesheet" href="css/foundation.css"/>
+		<link rel="stylesheet" type="text/css" href="css/chazgazm-styles.css">
 		<script src="js/vendor/modernizr.js"></script>
+		<script src="js/chazgazm-javascript.js"></script>
 	</head>
   
 <body>
 	<!--NAVIGATION-->
-	<aside>
-		<nav>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#work">Work</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="https://www.facebook.com/"><img src="http://placehold.it/40x40" alt="Facebook icon"></a></li>
-				<li><a href="https://twitter.com/"><img src="http://placehold.it/40x40" alt="Twitter icon"></a></li>
-				<li><a href="https://instagram.com/"><img src="http://placehold.it/40x40" alt="Instagram icon"></a></li>
-				<li><a href="https://www.linkedin.com/"><img src="http://placehold.it/40x40" alt="LinkedIn icon"></a></li>
-			</ul>
-		</nav>
-	</aside>
+	<div class="row">
+		<div class="medium-3 medium-offset-9 columns">
+			<aside>
+				<nav>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="https://www.facebook.com/"><img src="http://placehold.it/40x40" alt="Facebook icon"></a></li>
+						<li><a href="https://twitter.com/"><img src="http://placehold.it/40x40" alt="Twitter icon"></a></li>
+						<li><a href="https://instagram.com/"><img src="http://placehold.it/40x40" alt="Instagram icon"></a></li>
+						<li><a href="https://www.linkedin.com/"><img src="http://placehold.it/40x40" alt="LinkedIn icon"></a></li>
+					</ul>
+				</nav>
+			</aside>
+		</div>
+	</div>
 	<!--END NAVIGATION-->
 	
 	<!--HOME-->
@@ -130,8 +136,8 @@
 	<section id="contact">
 		<div class="row">
 			<div class="medium-6 medium-centered columns">
-				<p>Hit me up to have a...</p>
 				<img src="img/black-chazgazm-word-mark.png" alt="Chazgazm">
+				<p>For a good design</p>
 			</div>
 		</div>
 		<div class="row">
@@ -139,32 +145,41 @@
 				<div class="row">
 					<div class="large-5 large-offset-1 medium-6 columns">
 						<form>
-							<label>
-							What's your name?
-							<input type="text" name="name">
-							</label>
-							<br>
-							<label>
-							What's your number?
-							<input type="text" name="phone number">
-							</label>
-							<br>
-							<label>
-							What's your number?
-							<input type="text" name="phone number">
-							</label>
-							<br>
-							<label>
-							Give me your best pick-up line, and tell me what you want
-							<input type="text" name="write a message">
-							</label>
+							<div class="row">
+								<div class="large-12 columns">
+									<label>What's Yo Name?
+										<input type="text" placeholder="Dick Johnson"/>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns">
+									<label>What's Yo Numba?
+										<input type="text" placeholder="(309) 867-5309"/>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns">
+									<label>What's Yo Email?
+										<input type="text" placeholder="ineedachazgazm@gmail.com" />
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns">
+									<label>Tell me your best pickup line, and tell me you need a chazgazmic design:
+										<textarea placeholder="Are you a designer? 'Cause you're turning my descender into an ascender. I need a kick ass design, you should come design for me...NOW"></textarea>
+									</label>
+								</div>
+							</div>
 							<a href="#" class="button">Submit To Me</a>
 						</form>
 					</div>
 
 					<div class="large-4 large-offset-1 medium-5 medium-offset-1 columns">
-						<p>Call me?: (308) 383-2771</p>
-						<p>DM me?: whatsshakin@chazgazm.com</p>
+						<p>Call: (308) 383-2771</p>
+						<p>Email: whatsshakin@chazgazm.com</p>
 						<div class="row">
 							<ul>
 								<div class="medium-3 columns">
@@ -186,12 +201,16 @@
 			</div>
 		</div>
 	</section>
-		<!--END Contact-->
+	<!--END Contact-->
 		
-		<footer>
-			<p><small>Copyright. All rights reserved to Chazgazm.</small></p>
-		</footer>
-		
+	<div class="row">
+		<div class="medium-12 columns">	
+			<footer>
+				<p><small>Copyright. All rights reserved to Chazgazm.</small></p>
+			</footer>
+		</div>
+	</div>
+	
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/foundation.min.js"></script>
 	<script>
