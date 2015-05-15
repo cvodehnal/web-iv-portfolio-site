@@ -6,9 +6,6 @@ li {
 	list-style-type: none;
 }
 
-/*skills positioning*/
-
-
 /*project image positioning*/
 .human-project {
 	margin-top: 50%;
@@ -37,13 +34,13 @@ span.hidden {
 
 /*project hovers*/
 .project {
-	max-width: auto;
+	max-width: 100%;
 	position: relative;
 	-webkit-transition: all 0.6s;
 }
 
 .project img {
-	max-width: auto;
+	max-width: 100%;
 	-webkit-transition: all 0.6s;
 }
 
@@ -58,7 +55,6 @@ span.hidden {
 	right: 0;
 	-webkit-transition: all 0.3s ease-in-out;
 	opacity: 0;
-	transition: scale(1);
 }
 
 .project p {
