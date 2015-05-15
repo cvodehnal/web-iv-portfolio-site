@@ -1,29 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
 
-nav {
-	background-color: pink;
-}
-
+/*basic css styling*/
 li {
 	list-style-type: none;
 }
 
-.fuckthis {
-	margin-top: -75%;
-}
- .thissucks {
-	 margin-top: -50%;
- }
+/*skills positioning*/
 
-.ihatelife {
+
+/*project image positioning*/
+.human-project {
 	margin-top: 50%;
 }
 
-.poop {
+.hued-project {
+	margin-top: -75%;
+}
+
+.night-stand-project {
+	 margin-top: -50%;
+ }
+
+.platos-closet-project {
 	margin-top: -25%;
 }
 
+/*hero image positioning*/
 .chazgazm {
 	margin-bottom: 45%;
 }
@@ -32,6 +35,57 @@ span.hidden {
     display: none;
 }
 
+/*project hovers*/
+.project {
+	max-width: auto;
+	position: relative;
+	-webkit-transition: all 0.6s;
+}
+
+.project img {
+	max-width: auto;
+	-webkit-transition: all 0.6s;
+}
+
+.project .project-info {
+	display: block;
+	background: #FF0D85;
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 100%;
+	bottom: 0;
+	right: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	opacity: 0;
+	transition: scale(1);
+}
+
+.project p {
+	transform: scale(0.2);
+	-webkit-transition: all 0.3s ease 0.2s;
+	opacity:0;
+	margin: 5%;
+	padding:0;
+}
+
+.project .project-info .project-content {
+	width: 100%;
+	position: relative;
+}
+
+.project:hover .project-info {
+	opacity: .7; 
+	transform: scale(1);
+	visibility: visible;
+}
+
+.project:hover p {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/*off canvas nav*/
 #menu {
 	z-index: 1000;
 	position: fixed;
@@ -39,77 +93,89 @@ span.hidden {
 	bottom: 0;
 	width: 13.755em;
 	right: -13.755em;
-         height: 100%;
-         -webkit-transform: translate(0px, 0px);
-        -moz-transform: translate(0px, 0px);
-        -o-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
-        -webkit-transition: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: 0.15s ease;
+	height: 100%;
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+	-webkit-transition: 0.15s ease;
+	-moz-transition: 0.15s ease;
+	-o-transition: 0.15s ease;
+	transition: 0.15s ease;
 }
 
  #menu.active {
-        -webkit-transform: translate(-13.755em, 0px);
-        -moz-transform: translate(-13.755em, 0px);
-        -o-transform: translate(-13.755em, 0px);
-        -ms-transform: translate(-13.755em, 0px);
-        transform: translate(-13.755em, 0px);
+	-webkit-transform: translate(-13.755em, 0px);
+	-moz-transform: translate(-13.755em, 0px);
+	-o-transform: translate(-13.755em, 0px);
+	-ms-transform: translate(-13.755em, 0px);
+	transform: translate(-13.755em, 0px);
 }
 
 .container {
-       -webkit-transform: translate(0px, 0px);
-       -moz-transform: translate(0px, 0px);
-       -o-transform: translate(0px, 0px);
-       -ms-transform: translate(0px, 0px);
-       transform: translate(0px, 0px);
-       -webkit-transition: 0.15s ease;
-       -moz-transition: 0.15s ease;
-       -o-transition: 0.15s ease;
-       transition: 0.15s ease;  
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+	-webkit-transition: 0.15s ease;
+	-moz-transition: 0.15s ease;
+	-o-transition: 0.15s ease;
+	transition: 0.15s ease;  
 }
 
 .container.active {
-       -webkit-transform: translate(-13.725em, 0px);
-       -moz-transform: translate(-13.725em, 0px);
-       -o-transform: translate(-13.725em, 0px);
-       -ms-transform: translate(-13.725em, 0px);
-       transform: translate(-13.725em, 0px);
+	-webkit-transform: translate(-13.725em, 0px);
+	-moz-transform: translate(-13.725em, 0px);
+	-o-transform: translate(-13.725em, 0px);
+	-ms-transform: translate(-13.725em, 0px);
+	transform: translate(-13.725em, 0px);
 }
 
 .menu-link {
-  position: absolute;
-  top: 15px;
-  left: -50px;
-  height: 35px;
-  width: 35px;
-  background: url('../img/menu.svg') rgba(0,0,0,0.3) no-repeat;
-  background-position: center center;
-  background-size: 50%;
-  z-index: 99;
-  opacity: 0.9;
-  -webkit-transition: opacity 0.15s ease;
-  -moz-transition: opacity 0.15s ease;
-  -o-transition: opacity 0.15s ease;
-  transition: opacity 0.15s ease;
+	position: absolute;
+	top: 15px;
+	left: -50px;
+	height: 35px;
+	width: 35px;
+	background: url('../img/menu.svg') rgba(0,0,0,0.3) no-repeat;
+	background-position: center center;
+	background-size: 50%;
+	z-index: 99;
+	opacity: 0.9;
+	-webkit-transition: opacity 0.15s ease;
+	-moz-transition: opacity 0.15s ease;
+	-o-transition: opacity 0.15s ease;
+	transition: opacity 0.15s ease;
 }
 
-// Small screens
+/*Small screen styles*/
 @media only screen and (max-width: 40em) {
-.fuckthis {
+.human-project {
 	margin: 0;
 }
- .thissucks {
+.hued-project {
 	 margin: 0;
  }
 
-.ihatelife {
+.night-stand-project {
 	margin: 0;
 }
 
-.poop {
+.platos-closet-project {
 	margin: 0;
 }
-} /* Define mobile styles */
+
+.skill-set {
+    display: none;
+}
+
+.contact-form {
+	display: none;
+}
+
+.project img {
+	width: 100%;
+}
+}
