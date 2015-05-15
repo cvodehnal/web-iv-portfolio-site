@@ -6,39 +6,38 @@
 		<title>Chazgazm</title>
 		<link rel="stylesheet" href="css/foundation.css"/>
 		<link rel="stylesheet" type="text/css" href="css/chazgazm-styles.css">
-		<script src="js/vendor/modernizr.js"></script>
-		<script src="js/chazgazm-javascript.js"></script>
+		<script src="js/vendor/modernizr.js"></script>	
 	</head>
   
 <body>
 	<!--NAVIGATION-->
-	<div class="row">
-		<div class="medium-3 medium-offset-9 columns">
-			<aside>
-				<nav>
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="https://www.facebook.com/"><img src="http://placehold.it/40x40" alt="Facebook icon"></a></li>
-						<li><a href="https://twitter.com/"><img src="http://placehold.it/40x40" alt="Twitter icon"></a></li>
-						<li><a href="https://instagram.com/"><img src="http://placehold.it/40x40" alt="Instagram icon"></a></li>
-						<li><a href="https://www.linkedin.com/"><img src="http://placehold.it/40x40" alt="LinkedIn icon"></a></li>
-					</ul>
-				</nav>
-			</aside>
-		</div>
-	</div>
+	<aside>
+		<nav id="menu">
+			<a href="#menu" class="menu-link">X</a>
+				<ul>
+					<span><a href="#">Title</a></span>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="https://www.facebook.com/"><img src="http://placehold.it/40x40" alt="Facebook icon"></a></li>
+					<li><a href="https://twitter.com/"><img src="http://placehold.it/40x40" alt="Twitter icon"></a></li>
+					<li><a href="https://instagram.com/"><img src="http://placehold.it/40x40" alt="Instagram icon"></a></li>
+					<li><a href="https://www.linkedin.com/"><img src="http://placehold.it/40x40" alt="LinkedIn icon"></a></li>
+				</ul>
+		</nav>
+	</aside>
+	
 	<!--END NAVIGATION-->
 	
 	<!--HOME-->
+	<div class="container">
 	<section id="home">
 		<div class="row">
 			<div class="medium-10 medium-centered columns">
 				<h1>
-				 Lose your virginity to... <span>Chazgazm</span>
-				<img src="img/black-chazgazm-word-mark.png" alt="Chazgazm">
+				 Lose your virginity to... <span class="hidden">Chazgazm</span>
+				<img class="chazgazm" src="img/black-chazgazm-word-mark.png" alt="Chazgazm">
 				</h1>
 			</div>
 		</div>
@@ -53,7 +52,7 @@
 				<img src="img/black-chazgazm-word-mark.png" alt="Chazgazm">
 			</div>
 		</div>
-
+		
 		<div class="row">
 			<div class="medium-12 columns">
 				<img src="http://placehold.it/1500x700" alt="Featured work/3 image slider">
@@ -62,10 +61,10 @@
 
 		<div class="row">
 			<div class="medium-4 medium-offset-1 columns">
-				<img src="http://placehold.it/300x500" alt="Project piece">
+				<img src="http://placehold.it/300x400" alt="Project piece">
 			</div>
 			<div class="medium-4 medium-offset-2 columns end">
-				<img src="http://placehold.it/500x300" alt="Project piece">
+				<img class="ihatelife" src="http://placehold.it/500x300" alt="Project piece">
 			</div>
 		</div>
 		
@@ -77,16 +76,16 @@
 
 		<div class="row">
 			<div class="medium-4 columns">
-				<img src="http://placehold.it/300x300" alt="Project piece">
+				<img class="thissucks" src="http://placehold.it/300x300" alt="Project piece">
 			</div>
 			<div class="medium-4 medium-offset-4 columns">
-				<img src="http://placehold.it/300x500" alt="Project piece">
+				<img class="fuckthis" src="http://placehold.it/300x500" alt="Project piece">
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="medium-4 medium-offset-2 columns">
-				<img src="http://placehold.it/500x500" alt="Project piece">
+			<div class="medium-4 medium-offset-3 columns">
+				<img class="poop" src="http://placehold.it/500x500" alt="Project piece">
 			</div>
 		</div>
 	</section>
@@ -210,12 +209,16 @@
 			</footer>
 		</div>
 	</div>
+	</div>
 	
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/foundation.min.js"></script>
 	<script>
 		$(document).foundation();
+		$(".menu-link").click(function(){
+      $("#menu").toggleClass("active");
+      $(".container").toggleClass("active");
+});
 	</script>
-
 </body>
 </html>

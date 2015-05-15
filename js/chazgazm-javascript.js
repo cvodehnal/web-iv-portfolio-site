@@ -1,6 +1,11 @@
 // JavaScript Document
 
-$(".menu-link").click(function(){
-      $("#menu").toggleClass("active");
-      $(".container").toggleClass("active");
+$(document).ready(function(){
+$('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
 });

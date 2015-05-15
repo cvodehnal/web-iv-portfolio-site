@@ -8,3 +8,108 @@ nav {
 li {
 	list-style-type: none;
 }
+
+.fuckthis {
+	margin-top: -75%;
+}
+ .thissucks {
+	 margin-top: -50%;
+ }
+
+.ihatelife {
+	margin-top: 50%;
+}
+
+.poop {
+	margin-top: -25%;
+}
+
+.chazgazm {
+	margin-bottom: 45%;
+}
+
+span.hidden {
+    display: none;
+}
+
+#menu {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 13.755em;
+	right: -13.755em;
+         height: 100%;
+         -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        -webkit-transition: 0.15s ease;
+        -moz-transition: 0.15s ease;
+        -o-transition: 0.15s ease;
+        transition: 0.15s ease;
+}
+
+ #menu.active {
+        -webkit-transform: translate(-13.755em, 0px);
+        -moz-transform: translate(-13.755em, 0px);
+        -o-transform: translate(-13.755em, 0px);
+        -ms-transform: translate(-13.755em, 0px);
+        transform: translate(-13.755em, 0px);
+}
+
+.container {
+       -webkit-transform: translate(0px, 0px);
+       -moz-transform: translate(0px, 0px);
+       -o-transform: translate(0px, 0px);
+       -ms-transform: translate(0px, 0px);
+       transform: translate(0px, 0px);
+       -webkit-transition: 0.15s ease;
+       -moz-transition: 0.15s ease;
+       -o-transition: 0.15s ease;
+       transition: 0.15s ease;  
+}
+
+.container.active {
+       -webkit-transform: translate(-13.725em, 0px);
+       -moz-transform: translate(-13.725em, 0px);
+       -o-transform: translate(-13.725em, 0px);
+       -ms-transform: translate(-13.725em, 0px);
+       transform: translate(-13.725em, 0px);
+}
+
+.menu-link {
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  height: 35px;
+  width: 35px;
+  background: url('../img/menu.svg') rgba(0,0,0,0.3) no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  z-index: 99;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.15s ease;
+  -moz-transition: opacity 0.15s ease;
+  -o-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+
+// Small screens
+@media only screen and (max-width: 40em) {
+.fuckthis {
+	margin: 0;
+}
+ .thissucks {
+	 margin: 0;
+ }
+
+.ihatelife {
+	margin: 0;
+}
+
+.poop {
+	margin: 0;
+}
+} /* Define mobile styles */
