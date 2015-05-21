@@ -1,6 +1,25 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*colors*/
+.container {
+	background-color: #FFFFFF;
+}
+
+p, h1 {
+	color: #000000;
+}
+
+.button {
+	background-color: #000000;
+	color: #2EBDBA;
+}
+
+.button:hover {
+	background-color: #2EBDBA;
+	color: #000000;
+}
+
 /*basic css styling*/
 li {
 	list-style-type: none;
@@ -46,7 +65,7 @@ span.hidden {
 
 .project .project-info {
 	display: block;
-	background: #FF0D85;
+	background: #2EBDBA;
 	position: absolute;
 	left:0;
 	top: 0;
@@ -71,7 +90,7 @@ span.hidden {
 }
 
 .project:hover .project-info {
-	opacity: .7; 
+	opacity: .8; 
 	transform: scale(1);
 	visibility: visible;
 }
@@ -79,6 +98,7 @@ span.hidden {
 .project:hover p {
 	opacity: 1;
 	transform: scale(1);
+	color: #FFFFFF;
 }
 
 /*off canvas nav*/
