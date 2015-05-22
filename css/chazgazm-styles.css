@@ -6,13 +6,34 @@
 	background-color: #FFFFFF;
 }
 
-p, h1 {
+h1 {
+	font: italic 900 250%/110% "proxima-nova", sans-serif;
 	color: #000000;
+}
+
+h2 {
+	font: italic 800 200%/110% "proxima-nova", sans-serif;
+	color: #000000;
+}
+
+h3 {
+	font: italic 700 150%/110% "proxima-nova", sans-serif;
+	color: #000000;
+}
+
+h4 {
+	font: italic 600 100%/110% "proxima-nova", sans-serif;
+	color: #000000;
+}
+
+p {
+	font: normal 100%/150% "proxima-nova", sans-serif;
 }
 
 .button {
 	background-color: #000000;
 	color: #2EBDBA;
+	font: italic 800 125%/110% "proxima-nova", sans-serif;
 }
 
 .button:hover {
@@ -168,30 +189,15 @@ span.hidden {
 
 /*Small screen styles*/
 @media only screen and (max-width: 40em) {
-.human-project {
-	margin: 0;
-}
-.hued-project {
-	 margin: 0;
- }
-
-.night-stand-project {
-	margin: 0;
-}
-
-.platos-closet-project {
-	margin: 0;
-}
-
-.skill-set {
-    display: none;
-}
-
-.contact-form {
-	display: none;
-}
-
-.project img {
-	width: 100%;
-}
+	.human-project, .hued-project, .night-stand-project, .platos-closet-project {
+		margin: 0;
+	}
+	
+	.skill-set, .contact-form {
+		display: none;
+	}
+	
+	.project img {
+		width: 100%;
+	}
 }

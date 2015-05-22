@@ -4,6 +4,8 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>NoGo</title>
+		<script src="//use.typekit.net/obw2jxn.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
 		<link rel="stylesheet" href="css/foundation.css"/>
 		<link rel="stylesheet" type="text/css" href="css/chazgazm-styles.css">
 		<script src="js/vendor/modernizr.js"></script>
@@ -32,7 +34,7 @@
 			<div class="row">
 				<div class="large-6 large-centered columns">
 					<h1>
-						Projects to make you... <span class="hidden">Chazgazm</span>
+						Projects to make you<span class="hidden">Chazgazm</span>
 						<img src="img/chazgazm-wordmark-blue.png" alt="Chazgazm">
 					</h1>
 				</div>
@@ -52,8 +54,8 @@
 			</div>
 			<div class="row">
 				<div class="large-6 columns">
-					<p>Client: NoGo</p>
-					<p>Application: Ad Campaign</p>
+					<h2>Client: NoGo</h2>
+					<h3>Application: Ad Campaign</h3>
 				</div>
 				<div class="large-6 columns">
 					<p>NoGo is a pharmaceutical company that created the first male birth control oral contraceptive product that prevents sperm cells from being released from the male reproductive system (she means balls and weiner). NoGo wanted to become known among the younger male species through a humorous, sperm infested ad campaign series.</p>
@@ -104,6 +106,10 @@
 		<script src="js/foundation.min.js"></script>
 		<script>
 			$(document).foundation();
+			$(".menu-link").click(function(){
+				$("#menu").toggleClass("active");
+				$(".container").toggleClass("active");
+			});
 		</script>
 	</body>
 </html>
