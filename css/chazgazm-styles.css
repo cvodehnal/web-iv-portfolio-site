@@ -65,7 +65,11 @@ li {
 
 /*hero image positioning*/
 .chazgazm {
-	margin-bottom: 45%;
+	margin-bottom: 25%;
+}
+
+#home {
+	margin-top: 15%;
 }
 
 span.hidden {
