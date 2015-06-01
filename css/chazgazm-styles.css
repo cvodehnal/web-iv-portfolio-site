@@ -30,10 +30,15 @@ p {
 	font: normal 100%/150% "proxima-nova", sans-serif;
 }
 
+.project-page-info h3 {
+	color: #000000
+}
+
 .button {
 	background-color: #000000;
 	color: #2EBDBA;
 	font: italic 800 125%/110% "proxima-nova", sans-serif;
+	width: 100%;
 }
 
 .button:hover {
@@ -44,6 +49,18 @@ p {
 /*basic css styling*/
 li {
 	list-style-type: none;
+}
+
+#contact, #about {
+	margin-top: 15%;
+}
+
+#contact h3 {
+	color: #000000;
+}
+
+.row {
+	max-width: 90%;
 }
 
 /*contact form DEFAULT*/
@@ -133,6 +150,10 @@ span.hidden {
     display: none;
 }
 
+.project-header {
+	margin: 15% 0 15% 0;
+}
+
 /*project hovers*/
 .project {
 	max-width: 100%;
@@ -141,7 +162,7 @@ span.hidden {
 }
 
 .project img {
-	max-width: 100%;
+	width: 100%;
 	-webkit-transition: all 0.6s;
 }
 
@@ -169,7 +190,7 @@ span.hidden {
 }
 
 .project .project-info .project-content {
-	width: 100%;
+	max-width: 100%;
 	position: relative;
 	padding: 10%;
 }
@@ -179,6 +200,7 @@ span.hidden {
 	transform: scale(1);
 	visibility: visible;
 	display: inline;
+	max-width: 100%;
 }
 
 .project:hover p, h3, h4 {
@@ -252,6 +274,21 @@ span.hidden {
 	transition: opacity 0.15s ease;
 }
 
+/*Medium screen styles*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.chazgazm {
+		margin-bottom: 25%;
+	}
+	
+	#home {
+		margin-top: 20%;
+	}
+	
+	.row {
+		max-width: 90%;
+	}
+}
+
 /*Small screen styles*/
 @media only screen and (max-width: 40em) {
 	.human-project, .hued-project, .night-stand-project, .platos-closet-project {
@@ -264,5 +301,21 @@ span.hidden {
 	
 	.project img {
 		width: 100%;
+	}
+	
+	.slider {
+		display: none;
+	}
+	
+	.chazgazm {
+		margin-bottom: 35%;
+	}
+	
+	#home {
+		margin-top: 30%;
+	}
+	
+	.row {
+		max-width: 100%;
 	}
 }
