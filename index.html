@@ -16,17 +16,17 @@
 		<!--NAVIGATION-->
 		<aside>
 			<nav id="menu">
-				<a href="#menu" class="menu-link">X</a>
+				<a href="#menu" class="menu-link"><img src="img/button-menu.png"></a>
 				<ul>
 					<li><a href="#"><span>Menu</span></a></li>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="https://www.facebook.com/"><img src="http://placehold.it/40x40" alt="Facebook icon"></a></li>
-					<li><a href="https://twitter.com/"><img src="http://placehold.it/40x40" alt="Twitter icon"></a></li>
-					<li><a href="https://instagram.com/"><img src="http://placehold.it/40x40" alt="Instagram icon"></a></li>
-					<li><a href="https://www.linkedin.com/"><img src="http://placehold.it/40x40" alt="LinkedIn icon"></a></li>
+					<li><a class="menu-item" href="#home">Home</a></li>
+					<li><a class="menu-item" href="#work">Work</a></li>
+					<li><a class="menu-item" href="#about">About</a></li>
+					<li><a class="menu-item" href="#contact">Contact</a></li>
+					<li><a class="menu-item" href="https://www.facebook.com/"><img src="http://placehold.it/40x40" alt="Facebook icon"></a></li>
+					<li><a class="menu-item" href="https://twitter.com/"><img src="http://placehold.it/40x40" alt="Twitter icon"></a></li>
+					<li><a class="menu-item" href="https://instagram.com/"><img src="http://placehold.it/40x40" alt="Instagram icon"></a></li>
+					<li><a class="menu-item" href="https://www.linkedin.com/"><img src="http://placehold.it/40x40" alt="LinkedIn icon"></a></li>
 				</ul>
 			</nav>
 		</aside>
@@ -290,6 +290,12 @@
 		<script>
 			$(document).foundation();
 			$(".menu-link").click(function(){
+				$("#menu").toggleClass("active");
+				$(".container").toggleClass("active");
+				$(".off-canvas-list a").on("click.toggleCanvas", function(){
+					$(".exit-off-canvas").click();});
+			});
+			$(".menu-item").click(function(){
 				$("#menu").toggleClass("active");
 				$(".container").toggleClass("active");
 			});
