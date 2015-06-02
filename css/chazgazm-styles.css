@@ -37,13 +37,14 @@ p {
 .button {
 	background-color: #000000;
 	color: #2EBDBA;
-	font: italic 800 125%/110% "proxima-nova", sans-serif;
-	width: 100%;
+	font: italic 800 125% "proxima-nova", sans-serif;
+	max-width: 100%;
 }
 
 .button:hover {
 	background-color: #2EBDBA;
 	color: #000000;
+	font: italic 800 125% "proxima-nova", sans-serif;
 }
 
 /*basic css styling*/
