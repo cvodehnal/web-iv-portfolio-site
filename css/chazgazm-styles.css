@@ -34,13 +34,27 @@ p {
 	color: #000000
 }
 
-.button, .button:hover {
-	background-color: transparent;
+.button {
+	background: url(../img/brush-button.png);
 	border-color:transparent;
-	padding: 0;
+	padding: 20px;
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+.button:hover {
+	background: url(../img/brush-button-pink.png);
+	border-color:transparent;
+	background-size:100%;
+	background-repeat:no-repeat;
 }
 
-.button:hover img:first-child {
+.previous-next {
+	position:fixed;
+	bottom: 0;
+	z-index: 999;
+}
+
+/*.button:hover img:first-child {
 	display: none;
 	background-color: transparent;
 	color: #2EBDBA;
@@ -52,10 +66,21 @@ p {
 	background-color: transparent;
 	color: #000000;
 	font: italic 800 125% "proxima-nova", sans-serif;
+}*/
+
+.form-button {
+	border: solid 2px #000000;
+	background-color: transparent;
+	width: 100%;
+	height: 50px;
+	font: italic 800 125% "proxima-nova", sans-serif;
 }
 
-span.button-text {
-	margin-top: 50%;
+.form-button:hover {
+	border: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	font: italic 800 125% "proxima-nova", sans-serif;
 }
 
 /*basic css styling*/
@@ -83,6 +108,10 @@ li {
 .icons:hover img:last-child {
 	display: inline-block;
 	width: 100;
+}
+
+.project-row{
+	margin 30px;
 }
 
 /*contact form DEFAULT*/

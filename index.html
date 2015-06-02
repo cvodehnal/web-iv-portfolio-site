@@ -209,9 +209,8 @@
 				</div>
 				<div class="row">
 					<div class="large-3 large-offset-6 medium-5 medium-offset-5 columns">
-						<a href="#" class="button">Submit To Me
-							<img src="img/brush-button.png" alt="black brush stroke button">
-							<img class="hide" src="img/brush-button-pink.png" alt="pink brush stroke button">
+						<a href="#contact" class="button"> 
+							<span>Submit To Me</span>
 						</a>
 					</div>
 				</div>
@@ -247,39 +246,37 @@
 					<div class="large-10 medium-12 columns">
 						<div class="row">
 							<div class="large-5 large-offset-1 medium-6 columns">
-								<form class="contact-form">
+								
+								<form class="contact-form" method="post" action="contact-engine.php">
 									<div class="row">
 										<div class="large-12 columns">
 											<label>What&rsquo;s Yo Name&quest;
-											<input type="text" placeholder="Dick Johnson"/>
+											<input type="text" name="Name" id="Name" placeholder="Dick Johnson"/>
 											</label>
 										</div>
 									</div>
 									<div class="row">
 										<div class="large-12 columns">
 											<label>What&rsquo;s Yo Numba&quest;
-											<input type="text" placeholder="&lpar;309&rpar; 867&hyphen;5309"/>
+											<input type="text" name="Tel" id="Tel" placeholder="&lpar;309&rpar; 867&hyphen;5309"/>
 											</label>
 										</div>
 									</div>
 									<div class="row">
 										<div class="large-12 columns">
 											<label>What&rsquo;s Yo Email&quest;
-											<input type="text" placeholder="ineedachazgazm&commat;gmail.com" />
+											<input type="text" name="Email" id="Email" placeholder="ineedachazgazm&commat;gmail.com" />
 											</label>
 										</div>
 									</div>
 									<div class="row">
 										<div class="large-12 columns">
 											<label>Tell me your best pickup line, and tell me you need a chazgazmic design&colon;
-											<textarea placeholder="Are you a designer&quest; &rsquo;Cause you&rsquo;re turning my descender into an ascender. I need a kick ass design, you should come design for me&hellip;NOW"></textarea>
+											<textarea name="Message" id="Message" placeholder="Are you a designer&quest; &rsquo;Cause you&rsquo;re turning my descender into an ascender. I need a kick ass design, you should come design for me&hellip;NOW"></textarea>
 											</label>
 										</div>
 									</div>
-									<a href="#" class="button">Submit To Me
-										<img src="img/brush-button.png" alt="black brush stroke button">
-										<img class="hide" src="img/brush-button-pink.png" alt="pink brush stroke button">
-									</a>
+									<input class="form-button" type="submit" value="Submit To Me">
 								</form>
 							</div>
 							<div class="large-4 large-offset-1 medium-5 medium-offset-1 columns">
