@@ -34,17 +34,28 @@ p {
 	color: #000000
 }
 
-.button {
-	background-color: #000000;
-	color: #2EBDBA;
-	font: italic 800 125% "proxima-nova", sans-serif;
-	max-width: 100%;
+.button, .button:hover {
+	background-color: transparent;
+	border-color:transparent;
+	padding: 0;
 }
 
-.button:hover {
-	background-color: #2EBDBA;
+.button:hover img:first-child {
+	display: none;
+	background-color: transparent;
+	color: #2EBDBA;
+	font: italic 800 125% "proxima-nova", sans-serif;
+}
+
+.button:hover img:last-child {
+	display: inline-block;
+	background-color: transparent;
 	color: #000000;
 	font: italic 800 125% "proxima-nova", sans-serif;
+}
+
+span.button-text {
+	margin-top: 50%;
 }
 
 /*basic css styling*/
@@ -62,6 +73,16 @@ li {
 
 .row {
 	max-width: 90%;
+}
+
+.icons:hover img:first-child {
+	display: none;
+	width: 100%;
+}
+
+.icons:hover img:last-child {
+	display: inline-block;
+	width: 100;
 }
 
 /*contact form DEFAULT*/
