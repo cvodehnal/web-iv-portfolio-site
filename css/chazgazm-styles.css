@@ -32,22 +32,40 @@ p {
 }
 
 /*Project pages*/
-.project-page-info h3 {
+.project-buttons {
+	background: url(../img/brush-button.png);
+	padding-bottom: 23px;
+	margin: auto;
+	background-size: 100%;
+	width: 100%;
+	background-repeat:no-repeat;
+	font: italic 800 125% "proxima-nova", sans-serif;
+	color: #2EBDBA;
+}
+
+.project-buttons:hover {
+	background: url(../img/brush-button-pink.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	font: italic 800 125% "proxima-nova", sans-serif;
 	color: #000000;
 }
 
+.button-row {
+	margin-top: 30px;
+}
+
 .project-page-info {
-	margin: 10px 0 10px 0;
+	margin-top: 60px;
 }
 
 /*Buttons*/
 .button {
 	background: url(../img/brush-button.png);
-	padding: 20px;
+	padding: 28px;
 	margin: auto;
 	background-size: 100%;
 	width: 100%;
-	height: 100%;
 	background-repeat:no-repeat;
 	font: italic 800 125% "proxima-nova", sans-serif;
 	color: #2EBDBA;
@@ -58,11 +76,6 @@ p {
 	background-repeat:no-repeat;
 	font: italic 800 125% "proxima-nova", sans-serif;
 	color: #000000;
-}
-
-.project-buttons {
-	padding: 1% 0 1% 0;
-	height: 100px;
 }
 
 .form-button {
