@@ -27,7 +27,7 @@ h4 {
 	font: italic 600 100%/110% "proxima-nova", sans-serif;
 }
 
-p {
+p, .menu-item {
 	font: normal 100%/150% "proxima-nova", sans-serif;
 }
 
@@ -79,10 +79,10 @@ p {
 /*Buttons*/
 .button {
 	background: url(../img/brush-button.png);
-	padding: 28px;
+	padding: 24px 50px 30px 50px;
 	margin: auto;
 	background-size: 100%;
-	width: 100%;
+	width: auto;
 	background-repeat:no-repeat;
 	font: italic 800 125% "proxima-nova", sans-serif;
 	color: #2EBDBA;
@@ -98,6 +98,7 @@ p {
 .form-button {
 	border: solid 2px #000000;
 	background-color: transparent;
+	color: #2EBDBA;
 	width: 100%;
 	height: 50px;
 	font: italic 800 125% "proxima-nova", sans-serif;
@@ -105,8 +106,8 @@ p {
 
 .form-button:hover {
 	border: none;
-	background-color: #000000;
-	color: #FFFFFF;
+	background-color: #ed2287;
+	color: #000000;
 	font: italic 800 125% "proxima-nova", sans-serif;
 }
 
@@ -178,6 +179,12 @@ li {
 
 .project-row{
 	margin-bottom: 30px;
+}
+
+.social {
+	margin-top: 45px;
+	max-width: 100%;
+	margin-left: -18px;
 }
 
 /*Contact Form DEFAULT*/
@@ -372,19 +379,31 @@ span.hidden {
 }
 
 .menu-link {
+	background: url(../img/button-menu.png);
 	position: absolute;
 	top: 15px;
 	left: -50px;
 	height: 35px;
 	width: 35px;
 	background-position: center center;
-	background-size: 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	z-index: 99;
-	opacity: 0.9;
-	-webkit-transition: opacity 0.15s ease;
-	-moz-transition: opacity 0.15s ease;
-	-o-transition: opacity 0.15s ease;
-	transition: opacity 0.15s ease;
+	cursor: pointer;
+}
+
+.menu-link:hover {
+	background: url(../img/button-menu-pink.png);
+	position: absolute;
+	top: 15px;
+	left: -50px;
+	height: 35px;
+	width: 35px;
+	background-position: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: 99;
+	cursor: pointer;
 }
 
 /*Medium Screen Sizes*/
