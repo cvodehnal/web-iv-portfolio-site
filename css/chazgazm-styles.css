@@ -1,72 +1,69 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*colors*/
+/*Colors*/
 .container {
 	background-color: #FFFFFF;
 }
 
+h1, h2, h3, h4, p, a, #contact h3, .project-page-info h3 {
+	color: #000000;
+}
+
+/*Typography*/
 h1 {
 	font: italic 900 250%/110% "proxima-nova", sans-serif;
-	color: #000000;
 }
 
 h2 {
 	font: italic 800 200%/110% "proxima-nova", sans-serif;
-	color: #000000;
 }
 
 h3 {
 	font: italic 700 150%/110% "proxima-nova", sans-serif;
-	color: #000000;
 }
 
 h4 {
 	font: italic 600 100%/110% "proxima-nova", sans-serif;
-	color: #000000;
 }
 
 p {
 	font: normal 100%/150% "proxima-nova", sans-serif;
 }
 
+/*Project pages*/
 .project-page-info h3 {
-	color: #000000
+	color: #000000;
 }
 
+.project-page-info {
+	margin: 10px 0 10px 0;
+}
+
+/*Buttons*/
 .button {
 	background: url(../img/brush-button.png);
-	border-color:transparent;
 	padding: 20px;
-	background-size:100%;
+	margin: auto;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
 	background-repeat:no-repeat;
+	font: italic 800 125% "proxima-nova", sans-serif;
+	color: #2EBDBA;
 }
 .button:hover {
 	background: url(../img/brush-button-pink.png);
-	border-color:transparent;
 	background-size:100%;
 	background-repeat:no-repeat;
-}
-
-.previous-next {
-	position:fixed;
-	bottom: 0;
-	z-index: 999;
-}
-
-/*.button:hover img:first-child {
-	display: none;
-	background-color: transparent;
-	color: #2EBDBA;
 	font: italic 800 125% "proxima-nova", sans-serif;
-}
-
-.button:hover img:last-child {
-	display: inline-block;
-	background-color: transparent;
 	color: #000000;
-	font: italic 800 125% "proxima-nova", sans-serif;
-}*/
+}
+
+.project-buttons {
+	padding: 1% 0 1% 0;
+	height: 100px;
+}
 
 .form-button {
 	border: solid 2px #000000;
@@ -83,38 +80,77 @@ p {
 	font: italic 800 125% "proxima-nova", sans-serif;
 }
 
-/*basic css styling*/
+/*Icons*/
+.icons ul li {
+	margin: 5% 0 0 0;
+}
+
+.icon-facebook {
+	background:url(../img/icon-facebook.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	padding: 50%;
+}
+
+.icon-facebook:hover {
+	background:url(../img/icon-facebook-pink.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+.icon-twitter {
+	background: url(../img/icon-twitter.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	padding: 50%;
+}
+
+.icon-twitter:hover {
+	background: url(../img/icon-twitter-pink.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+.icon-instagram {
+	background: url(../img/icon-instagram.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	padding: 50%;
+}
+
+.icon-instagram:hover {
+	background: url(../img/icon-instagram-pink.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+.icon-linkedin {
+	background: url(../img/icon-linkedin.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	padding: 50%;
+}
+
+.icon-linkedin:hover {
+	background: url(../img/icon-linkedin-pink.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+/*Basic Styles*/
 li {
 	list-style-type: none;
-}
-
-#contact, #about {
-	margin-top: 15%;
-}
-
-#contact h3 {
-	color: #000000;
 }
 
 .row {
 	max-width: 90%;
 }
 
-.icons:hover img:first-child {
-	display: none;
-	width: 100%;
-}
-
-.icons:hover img:last-child {
-	display: inline-block;
-	width: 100;
-}
-
 .project-row{
-	margin 30px;
+	margin-bottom: 30px;
 }
 
-/*contact form DEFAULT*/
+/*Contact Form DEFAULT*/
 input[type="text"] {
 	font: italic 600 100%/100% "proxima-nova", sans-serif;
 	color: #2EBDBA;
@@ -124,7 +160,7 @@ input[type="text"] {
 	border-width: 2px;
 }
 
-/*contact form PLACEHOLDER*/
+/*Contact Form PLACEHOLDER*/
 ::-webkit-input-placeholder {
 	font: italic 500 100%/100% "proxima-nova", sans-serif;
 	color: #2EBDBA;
@@ -171,7 +207,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 	color: #000000;
 }
 
-/*project image positioning*/
+/*Project Image Positioning*/
 .hued-project {
 	margin-top: 50%;
 }
@@ -188,13 +224,10 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 	margin-top: -10%;
 }
 
-/*hero image positioning*/
-.chazgazm {
-	margin-bottom: 25%;
-}
+/*Positioning*/
 
-#home {
-	margin-top: 15%;
+#home, #about {
+	margin: 15% 0 10% 0;
 }
 
 span.hidden {
@@ -205,7 +238,7 @@ span.hidden {
 	margin: 15% 0 15% 0;
 }
 
-/*project hovers*/
+/*Project Hovers*/
 .project {
 	max-width: 100%;
 	position: relative;
@@ -260,7 +293,7 @@ span.hidden {
 	color: #FFFFFF;
 }
 
-/*off canvas nav*/
+/*Off Canvas Nav*/
 #menu {
 	z-index: 1000;
 	position: fixed;
@@ -314,7 +347,6 @@ span.hidden {
 	left: -50px;
 	height: 35px;
 	width: 35px;
-
 	background-position: center center;
 	background-size: 50%;
 	z-index: 99;
@@ -325,7 +357,7 @@ span.hidden {
 	transition: opacity 0.15s ease;
 }
 
-/*Medium screen styles*/
+/*Medium Screen Sizes*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 	.chazgazm {
 		margin-bottom: 25%;
@@ -340,22 +372,18 @@ span.hidden {
 	}
 }
 
-/*Small screen styles*/
+/*Small Screen Sizes*/
 @media only screen and (max-width: 40em) {
 	.human-project, .hued-project, .night-stand-project, .platos-closet-project {
 		margin: 0;
 	}
 	
-	.skill-set, .contact-form {
+	.skill-set, .contact-form, .slider {
 		display: none;
 	}
 	
 	.project img {
 		width: 100%;
-	}
-	
-	.slider {
-		display: none;
 	}
 	
 	.chazgazm {
