@@ -32,9 +32,9 @@ p {
 }
 
 /*Project pages*/
-.project-buttons {
+.project-page-button-previous {
 	background: url(../img/brush-button.png);
-	padding-bottom: 23px;
+	padding: 20px 25px 21px 25px;
 	margin: auto;
 	background-size: 100%;
 	width: 100%;
@@ -42,8 +42,7 @@ p {
 	font: italic 800 125% "proxima-nova", sans-serif;
 	color: #2EBDBA;
 }
-
-.project-buttons:hover {
+.project-page-button-previous:hover {
 	background: url(../img/brush-button-pink.png);
 	background-size:100%;
 	background-repeat:no-repeat;
@@ -51,12 +50,30 @@ p {
 	color: #000000;
 }
 
-.button-row {
-	margin-top: 30px;
+.project-page-button-next {
+	background: url(../img/brush-button.png);
+	padding: 20px 50px 26px 50px;
+	margin: auto;
+	background-size: 100%;
+	width: 100%;
+	background-repeat:no-repeat;
+	font: italic 800 125% "proxima-nova", sans-serif;
+	color: #2EBDBA;
+}
+.project-page-button-next:hover {
+	background: url(../img/brush-button-pink.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	font: italic 800 125% "proxima-nova", sans-serif;
+	color: #000000;
+}
+
+.project-button {
+	margin-top: 40px;
 }
 
 .project-page-info {
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 /*Buttons*/
